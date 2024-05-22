@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flow Guard</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">X</button>
+      <div class="sidebar-items">
+        <a href="#">Cameras</a>
+        <a href="#">Chamados</a>
+        <a href="#">Dispositivos</a>
+        <a href="#">Suporte</a>
+        <button class="logout">Logout</button>
+      </div>
+    </div>
+    <button class="hamburger" onclick="toggleSidebar(1)">☰</button>
+    <div class="container">
+      <div class="dropdown">
+        <button type="button-pt" class="btn btn-secondary"> Portico <p id="selectedName"></p></button>
+        <div class="dropdown-content">
+          <a href="#" onclick="showName('São Paulo')">São Paulo</a>
+          <a href="#" onclick="showName('Minas Gerais')">Minas gerais</a>
+          <a href="#" onclick="showName('Rondonopolis')">Rondonopolis</a>
+          <a href="#" onclick="showName('Itajubeba')">Itajubeba</a>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="camera">Camera 1</div>
+      <div class="camera">Camera 2</div>
+      <div class="camera">Camera 3</div>
+      <div class="camera">Camera 4</div>
+      <div class="camera">Camera 5</div>
+      <div class="camera">Camera 6</div>
+    </div>
+    <div class="container-btt">
+      <button class="button-crs" onclick="showCameras(1)">Anterior</button>
+      <button class="button-crs" onclick="showCameras(4)">Proximo</button>
+    </div>
+    <div class="carousel"></div>
+    <div class="column">
+      <div class="item">Horário</div>
+      <div class="item">Equipamento</div>
+      <div class="item">Descrição</div>
+      <div class="item">Tempo Decorrido</div>
+      <div class="item">Ações</div>
+      <div class="item">Status</div>
+    </div>
+    <div class="column-l">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

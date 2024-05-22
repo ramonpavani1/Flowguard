@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flow Guard</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">X</button>
+      <div class="sidebar-items">
+        <a href="#">Cameras</a>
+        <a href="#">Chamados</a>
+        <a href="#">Dispositivos</a>
+        <a href="#">Suporte</a>
+        <button class="logout">Logout</button>
+      </div>
+    </div>
+    <button class="hamburger" onclick="toggleSidebar(1)">☰</button>
+    <div class="container">
+      <div
+        class="TelaLogin"
+        style="
+          width: 1280px;
+          height: 832px;
+          position: relative;
+        "
+      >
+        <div
+          class="Rectangle12"
+          style="
+            width: 1280px;
+            height: 832px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+          "
+        ></div>
+        <div
+          class="Rectangle36"
+          style="
+            width: 1150px;
+            height: 746px;
+            left: 65px;
+            top: 43px;
+            position: absolute;
+            border-radius: 20px;
+          "
+        ></div>
+        <div
+          class="Component2"
+          style="
+            width: 774px;
+            height: 342px;
+            left: 253px;
+            top: 245px;
+            position: absolute;
+          "
+        >
+          <div
+            class="Rectangle35"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 112px;
+              top: 32px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Rectangle38"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 459px;
+              top: 32px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="V"
+            style="
+              left: 748px;
+              top: 35px;
+              position: absolute;
+              color: #ffe500;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            v
+          </div>
+          <div
+            class="Rectangle39"
+            style="
+              width: 85px;
+              height: 36px;
+              left: 0px;
+              top: 32px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Rectangle37"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 0px;
+              top: 115px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Rectangle41"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 0px;
+              top: 198px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Rectangle42"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 336px;
+              top: 198px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Rectangle40"
+            style="
+              width: 315px;
+              height: 36px;
+              left: 459px;
+              top: 115px;
+              position: absolute;
+              background: #d9d9d9;
+              border-radius: 20px;
+            "
+          ></div>
+          <div
+            class="Nome"
+            style="
+              left: 112px;
+              top: 0px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Nome
+          </div>
+          <div
+            class="Localidade"
+            style="
+              left: 459px;
+              top: 0px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Localidade
+          </div>
+          <div
+            class="Id"
+            style="
+              left: 0px;
+              top: 0px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Id
+          </div>
+          <div
+            class="NS"
+            style="
+              left: 0px;
+              top: 83px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            N/S
+          </div>
+          <div
+            class="DataCompra"
+            style="
+              left: 0px;
+              top: 166px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Data Compra
+          </div>
+          <div
+            class="Ip"
+            style="
+              left: 336px;
+              top: 166px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            IP
+          </div>
+          <div
+            class="Tipo"
+            style="
+              left: 459px;
+              top: 83px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Tipo
+          </div>
+          <div
+            class="Rectangle31"
+            style="
+              width: 203px;
+              height: 48px;
+              left: 0px;
+              top: 294px;
+              position: absolute;
+              background: #ffe500;
+              border-radius: 30px;
+            "
+          ></div>
+          <div
+            class="Incluir"
+            style="
+              left: 64px;
+              top: 304px;
+              position: absolute;
+              color: black;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            Incluir
+          </div>
+          <div
+            class="Rectangle34"
+            style="
+              width: 203px;
+              height: 48px;
+              left: 571px;
+              top: 294px;
+              position: absolute;
+              background: #ff0000;
+              border-radius: 30px;
+            "
+          ></div>
+          <div
+            class="Sair"
+            style="
+              left: 644px;
+              top: 304px;
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            SAIR
+          </div>
+          <div
+            class="V"
+            style="
+              left: 748px;
+              top: 118px;
+              position: absolute;
+              color: #ffe500;
+              font-size: 24px;
+              font-family: Inter;
+              font-weight: 800;
+              word-wrap: break-word;
+            "
+          >
+            v
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"
+      ></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Aleatória</title>
+  </head>
+    <style>
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+      }
+      .full-width-column {
+        display: flex;
+        flex-direction: column;
+        background-color: #484848;
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        .full-width-column {
+          max-width: 100%;
+        }
+      }
+      .image-section {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        min-height: 637px;
+        width: 100%;
+        align-items: flex-end;
+        padding: 22px 60px 80px;
+      }
+      @media (max-width: 991px) {
+        .image-section {
+          max-width: 100%;
+          padding: 0 20px;
+        }
+      }
+      .main-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: auto;
+        object-position: center;
+      }
+      .overlay-image {
+        aspect-ratio: 3.57;
+        object-fit: auto;
+        object-position: center;
+        width: 110px;
+        margin-bottom: 387px;
+        max-width: 100%;
+      }
+      @media (max-width: 991px) {
+        .overlay-image {
+          margin-bottom: 40px;
+        }
+      }
+      .status-section {
+        box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.3) inset;
+        background-color: #3f3f3f;
+        display: flex;
+        align-items: flex-start;
+        gap: 800px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        padding-left: 120px;
+        width: 100%;
+      }
+      @media (max-width: 991px) {
+        .status-section {
+          max-width: 100%;
+          flex-wrap: wrap;
+          padding: 0 20px;
+        }
+      }
+      .status-column {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+      }
+      .status-title,
+      .status-temperature,
+      .status-humidity {
+        font-family: Inter, sans-serif;
+      }
+      .status-temperature {
+        margin-top: 66px;
+      }
+      @media (max-width: 991px) {
+        .status-temperature {
+          margin-top: 40px;
+        }
+      }
+      .status-humidity {
+        margin-top: 37px;
+      }
+      .focus-status {
+        font-family: Inter, sans-serif;
+        flex-grow: 1;
+        margin: auto 0;
+      }
+      @media (max-width: 991px) {
+        .focus-status {
+          max-width: 100%;
+        }
+      }
+    </style>
+    <body>
+      <section class="main-container">
+        <article class="full-width-column">
+          <section class="image-section">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/796f2be6e2e73a61cc47473afc46eca3c3ab03c9c3b8d50082b6067e175f3090?apiKey=ae65942b219d4a8896296e29af437691&"
+              alt=""
+              class="main-image"
+            />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7ce77672416cf6007e0b22486650e59e05034bf6c88437d4ef71cb8c3a479ba?apiKey=ae65942b219d4a8896296e29af437691&"
+              alt="Overlay image description"
+              class="overlay-image"
+            />
+          </section>
+          <section class="status-section">
+            <div class="status-column">
+              <p class="status-title">Status</p>
+              <p class="status-temperature">Temperatura 36 °C</p>
+              <p class="status-humidity">Umidade 30 %</p>
+            </div>
+            <p class="focus-status">Foco Normal</p>
+          </section>
+        </article>
+      </section>
+    </body>
+</html>
